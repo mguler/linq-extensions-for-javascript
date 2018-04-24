@@ -85,7 +85,7 @@ Array.prototype.last = function (func, _default) {
             result = this[index];
         }
     }
-    return result ? _default;
+    return result ? result : _default;
 }
 // End Of Extensions
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
