@@ -69,5 +69,23 @@ Array.prototype._concat = function (func) {
     return result;
 }
 
+Array.prototype.first= function (func, _default) {
+    for (var index = 0; index < this.length; index++) {
+        if (func(this[index], index) == true) {
+            return this[index];
+        }
+    }
+    return _default;
+}
+
+Array.prototype.last = function (func, _default) {
+    var result;
+    for (var index = 0; index < this.length; index++) {
+        if (func(this[index], index) == true) {
+            result = this[index];
+        }
+    }
+    return result ? _default;
+}
 // End Of Extensions
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
