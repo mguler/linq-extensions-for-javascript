@@ -21,7 +21,7 @@ Array.prototype.selectMany = function (func) {
 Array.prototype.where = function (func) {
     var result = [];
     for (var index = 0; index < this.length; index++) {
-        if (func(this[index], index) === true) {
+        if (func(this[index], index) == true) {
             result.push(this[index]);
         }
     }
@@ -30,7 +30,7 @@ Array.prototype.where = function (func) {
 
 Array.prototype.single = function (func, _default) {
     for (var index = 0; index < this.length; index++) {
-        if (func(this[index], index) === true) {
+        if (func(this[index], index) == true) {
             return this[index];
         }
     }
@@ -39,7 +39,7 @@ Array.prototype.single = function (func, _default) {
 
 Array.prototype.any = function (func) {
     for (var index = 0; index < this.length; index++) {
-        if (func(this[index], index) === true) {
+        if (func(this[index], index) == true) {
             return true;
         }
     }
@@ -54,7 +54,7 @@ Array.prototype.each = function (func) {
 Array.prototype.count = function (func) {
     var count = 0;
     for (var index = 0; index < this.length; index++) {
-        if (func(this[index], index) === true) {
+        if (func(this[index], index) == true) {
             count++;
         }
     }
