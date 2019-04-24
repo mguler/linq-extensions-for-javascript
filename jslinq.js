@@ -87,5 +87,14 @@ Array.prototype.last = function (func, _default) {
     }
     return result ? result : _default;
 }
+
+Array.prototype.aggregate = function (func, _default, skipFirst) {
+    var result = _default;
+    for (var index = (skipFirst == true ? 1:0); index < this.length; index++) {
+        result = func(result, this[index]);
+    }
+    return result;
+}
+
 // End Of Extensions
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
