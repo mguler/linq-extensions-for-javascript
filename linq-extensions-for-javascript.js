@@ -1,4 +1,5 @@
 ﻿//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
+// https://github.com/mguler/linq-extensions-for-javascript
 // Extensions
 
 Array.prototype.select = function (func) {
