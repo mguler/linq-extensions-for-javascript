@@ -1,6 +1,7 @@
 # linq-extensions-for-javascript
+
 #### "linq equivalent in javascript"
-some extension methods for javascript'## "linq equivalent in javascript"### "linq equivalent in javascript" array object to implement .net's linq style queries
+some extension methods for javascript's array object to implement .net's linq style queries
 
 ### example query: 
 
